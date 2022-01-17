@@ -19,8 +19,6 @@ console.log(88)
 }
 rotatePizza();
 
-console.log(degrees)
-
 
 
 
