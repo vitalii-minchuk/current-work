@@ -110,6 +110,10 @@ input:focus, textarea:focus, select:focus{
   justify-content: space-between;
   align-items: center;
 }
+.header__burger {
+  cursor: pointer;
+  display: none;
+}
 .header__user-icon-img {
   width: 52px;
   height: 52px;
@@ -125,17 +129,12 @@ input:focus, textarea:focus, select:focus{
   text-transform: capitalize;
   color: #FFFFFF;
 }
-
-
 .header__body {
   margin: 20px 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-
 }
-
 .header__content {
   display: flex;
   flex-direction: column;
@@ -144,13 +143,17 @@ input:focus, textarea:focus, select:focus{
   max-width: 50%;
   max-height: 70%;
 }
-
 .header__bg-food {
   margin-bottom: 2%;
   max-width: 50%;
 }
+.header__bg-food-img {
+
+  max-width: 100%;
+  max-height: 100%;
+}
 .header__title {
-  margin-bottom: 8%;
+  margin-bottom: 2%;
   width: 100%;
 }
 .header__title-text {
@@ -161,32 +164,28 @@ input:focus, textarea:focus, select:focus{
   text-shadow: 7px 3px 10px #2E266F;
 }
 .header__search {
-  max-width: 670px;
-  max-height: 90px;
-  margin: 0 auto 12%;
-  display: flex;
-  align-items: center;
-}
-.header__search-form {
-  background-color: #FFFFFF;
-  max-width: 100%;
-  height: 100%;
+  width: 650px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto 10%;
 }
 .header__search-input {
-  padding: 32px;
-  padding-left: 50px;
-  width: 352px;
-  font-size: 18px;
-  color: #2E266F;
   border: none;
-  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  padding: 0 20px;
+  background-color: #FFFFFF;
 }
 .header__search-btn {
-  width: 150px;;
-  height: 72px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 76%;
   font-size: 30px;
   font-weight: 500;
-  margin: 9px 9px 9px 0;
+  margin: 9px 9px 9px auto;
   background-color: #FE043C;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -214,14 +213,6 @@ input:focus, textarea:focus, select:focus{
 .header__tag-describtion {
   color: #FFFFFF;
   padding: 0 20px;
-}
-
-
-
-.header__bg-food-img {
-
-  max-width: 100%;
-  max-height: 100%;
 }
 .header__pizza {
   max-width: 50%;
@@ -297,34 +288,123 @@ input:focus, textarea:focus, select:focus{
 
 @media (max-width: 1200px) {
   .header__wrapper {
-    margin: 0 auto;
     max-width: 1230px;
-    padding: 0 15px;
-    overflow: hidden;
     background: url(./img/BG1.png) no-repeat center;
     object-fit: cover;
   }
   .header__title-text {
     font-size: 60px;
     line-height: 110%;
-    font-weight: 700;
-    margin-right: -100px;
   }
-  .header__menu {
+  .header__menu,
+  .header__user-icon,
+  .header__user-description {
     display: none;
+  }
+  .header__logo-img {
+    font-size: 60px;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__arrows {
+    margin-top: -50px;
+    margin-bottom: auto;
+  }
+  .header__search {
+    width: 450px;
   }
 }
 @media (max-width: 900px) {
   .header__wrapper {
-    margin: 0 auto;
     max-width: 930px;
-    padding: 0 15px;
-    overflow: hidden;
     background: url(./img/BG1.png) no-repeat right;
   }
+  .header__inner {
+    min-height: 100%;
+  }
+  .header__title-text {
+    font-size: 36px;
+    line-height: 133%;
+  }
 }
+@media (max-width: 768px) {
+  .header__wrapper {
+    max-width: 768px;
+    background: url(./img/BG3.png) no-repeat right;
+    background-size: cover;
+    height: 100vh;
+  }
+  .header__body {
+    flex-direction: column;
+  }
+  .header__pizza {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .header__main-pizza-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .header__arrows {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .header__logo-img {
+    font-size: 48px;
+  }
+  .header__bg-food {
+    max-width: 100%;
+  }
+  .header__title-text {
+    font-size: 60px;
+    line-height: 110%;
+  }
 
-
+}
+@media (max-width: 530px) {
+  .header__wrapper {
+    max-width: 530px;
+  }
+  .header__arrows >* {
+    height: 30px;
+  }
+  .header__main-pizza-img {
+    max-width: 90%;
+  }
+  .header__title-text {
+    font-size: 36px;
+    line-height: 133%;
+  }
+  .header__search {
+    width: 300px;
+    height: 50px;
+    margin-left: -8px;
+  }
+  .header__search-input {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  .header__search-btn {
+    width: 80px;
+    height: 78%;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 6px 5px 6px auto;
+  }
+  .header__tag{
+    margin-left: -10vw;
+    padding-right: 1vw;
+    width: 80%;
+    height: 45px;
+  }
+  .header__tag-describtion {
+    padding: 0 5px;
+    font-size: 22px;
+  }
+}
 /* -----------------------------------media slider------------------------------------------- */
 
 
