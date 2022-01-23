@@ -34,6 +34,9 @@
               </ul>
             </nav>
             <div class="header__user">
+              <div class="header__burger">
+                <img class="header__burger-img" src="./img/Menu 1.png" alt="menu burger">
+              </div>
               <div class="header__user-icon">
                 <img class="header__user-icon-img" src="./img/User icon.png" alt="user icon">
               </div>
@@ -51,24 +54,18 @@
               <div class="header__title">
                 <h1 class="header__title-text">Discover Restaurant & Delicious Food</h1>
               </div>
-              <!-- <div class="header__search">
-                <form class="header__search-form" action="#">
-                  <input class="header__search-input" type="text" placeholder="search restaurant, food">
-                  <button class="header__search-btn">go</button>
-                </form>
-              </div> -->
+              <div class="header__search">
+                <input class="header__search-input" type="text" placeholder="search restaurant, food">
+                <button class="header__search-btn">go</button>
+              </div>
               <div class="header__tag">
-                <div class="header__tag">
-                  <img class="header__tag-img --text-big" src="./img/map_sign.png" alt="location sign">
-                  <h4 class="header__tag-describtion">Rajshahi</h4>
-                </div>
+                <button class="header__tag-btn"></button>
               </div>
             </div>
             <div class="header__pizza">
               <img class="header__main-pizza-img" id="bigPizza" src="./img/big_pizza.png" alt="pizza">
               <img class="header__salat" src="./img/under_pizza.png" alt="salat">
-            </div>
-                       
+            </div>      
           </div>
           <div class="header__arrows">
             <img class="header__arr-left" id="arrLeft" src="./img/Left carousel.png" alt="arrow left">
@@ -79,23 +76,249 @@
     </div>
   </header>
   <main class="main">
-    <section class="slider">
-      <div class="container">
-        <div class="slider-top">
-          <div class="slider-top__title">
-            <h3 class="slider-top__title-text">some top restaurant for dining in or Take away!</h3>
+    <section class="booking">
+      <div class="booking__wrapper">
+        <img class="booking-BG-left" src="./img/booking_left.png" alt="salat">
+        <img class="booking-BG-right" src="./img/booking_right.png" alt="salat">
+        <div class="booking__box">
+          <img class="booking__decor-hor" src="./img/dots3.png" alt="dots">
+          <img class="booking__decor-vert" src="./img/dots2.png" alt="dots">
+          <div class="booking__box-title">
+            <h4 class="booking__box-title-text">advance booking</h4>
           </div>
-          <div class="slider-top__describtion">
-            <p class="slider-top__describtion-text --text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</p>
+            <div class="booking__search">
+              <form class="booking__search-form" action="#">
+                <input class="booking__search-input" type="text" placeholder="search restrurent">
+                <button class="booking__search-btn">Go</button>
+              </form>
+            </div>
+            <div class="booking__options">
+              <div class="booking__option">
+                <div class="booking__option-top">Date</div>
+                <div class="booking__option-bottom">23-09-2020</div>
+              </div>
+              <div class="booking__option">
+                <div class="booking__option-top">Time</div>
+                <div class="booking__option-bottom">5.00 PM</div>
+              </div>
+              <div class="booking__option">
+                <div class="booking__option-top">Guests</div>
+                <div class="booking__option-bottom">3 People</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__wrapper">
+        <div class="container">
+          <div class="slider-top">
+            <div class="slider-top__title">
+              <h3 class="slider-top__title-text">Our <br> Services</h3>
+            </div>
+            <div class="slider-top__describtion">
+              <p class="slider-top__describtion-text --text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</p>
+            </div>
+          </div>
+          <div class="services__box">
+            <div class="services__food">
+              <div class="services__table">
+                <div class="services__table-icon">
+                  <img class="services__table-img" src="./img/Icon_red.png" alt="table">
+                </div>
+                <div class="services__table-desc">
+                  <h6 class="services__table-desc-top">advanced table</h6>
+                  <h6 class="services__table-desc-down">booking</h6>
+                  <p class="services__table-desc-text --text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="services__food-free">
+                <div class="services__food-free-desc">
+                  <h6 class="services__food-free-desc-top">Food For Free</h6>
+                  <h6 class="services__food-free-desc-down">24/7</h6>
+                  <p class="services__food-free-desc-text --text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="services__food-free-icon">
+                  <img class="services__food-free-img" src="./img/Icon1red.png" alt="food">
+                </div>
+              </div>
+            </div>
+            <div class="services__delivery">
+              <div class="services__delivery-icon">
+                <img class="services__delivery-img" src="./img/Icon2red.png" alt="food">
+              </div>
+              <div class="services__delivery-desc">
+                <h6 class="services__delivery-top">free home delivery at your door steps</h6>
+                <p class="services__delivery-desc-text --text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="slider__wrapper">
-
+    </section>
+    <section class="explore">
+      <div class="explore__wrapper">
+        <div class="container">
+          <div class="explore__top">
+            <div class="explore__top-title">
+              <h3 class="explore__top-title-text">Explore Our Foods</h3>
+            </div>
+            <div class="explore__top-desc">
+              <p class="explore__top-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id amet.</p>
+            </div>
+          </div>
+          <div class="explore__box">
+            <div class="explore__item">
+              <div class="explore__item-top">
+                <img class="explore__item-top-img" src="./img/food1.png" alt="food">
+              </div>
+              <div class="explore__item-bottom">
+                <h6 class="explore__item-name">Hand Sandwich</h6>
+                <h6 class="explore__item-price">$10.25</h6>
+              </div>
+              <div class="explore__item-desc">
+                <p class="explore__item-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="explore__item">
+              <div class="explore__item-top">
+                <img class="explore__item-top-img" src="./img/food2.png" alt="food">
+              </div>
+              <div class="explore__item-bottom">
+                <h6 class="explore__item-name">Hand Sandwich</h6>
+                <h6 class="explore__item-price">$10.25</h6>
+              </div>
+              <div class="explore__item-desc">
+                <p class="explore__item-desc-text --text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="explore__item">
+              <div class="explore__item-top">
+                <img class="explore__item-top-img" src="./img/food3.png" alt="food">
+              </div>
+              <div class="explore__item-bottom">
+                <h6 class="explore__item-name">Hand Sandwich</h6>
+                <h6 class="explore__item-price">$10.25</h6>
+              </div>
+              <div class="explore__item-desc">
+                <p class="explore__item-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="explore__item">
+              <div class="explore__item-top">
+                <img class="explore__item-top-img" src="./img/food4.png" alt="food">
+              </div>
+              <div class="explore__item-bottom">
+                <h6 class="explore__item-name">Hand Sandwich</h6>
+                <h6 class="explore__item-price">$10.25</h6>
+              </div>
+              <div class="explore__item-desc">
+                <p class="explore__item-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="explore__item">
+              <div class="explore__item-top">
+                <img class="explore__item-top-img" src="./img/food7.png" alt="food">
+              </div>
+              <div class="explore__item-bottom">
+                <h6 class="explore__item-name">Hand Sandwich</h6>
+                <h6 class="explore__item-price">$10.25</h6>
+              </div>
+              <div class="explore__item-desc">
+                <p class="explore__item-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="explore__item">
+              <div class="explore__item-top">
+                <img class="explore__item-top-img" src="./img/food8.png" alt="food">
+              </div>
+              <div class="explore__item-bottom">
+                <h6 class="explore__item-name">Hand Sandwich</h6>
+                <h6 class="explore__item-price">$10.25</h6>
+              </div>
+              <div class="explore__item-desc">
+                <p class="explore__item-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="download">
+      <div class="download__wrapper">
+        <div class="container">
+          <div class="download__box">
+            <div class="download__content">
+              <div class="download__title">
+                <h3 class="download__title-text">Download app for Exciting Deals</h3>
+                <p class="download__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt.</p>
+              </div>
+              <div class="download__btns">
+                <img class="google" src="./img/Google Play Btn.png" alt="google">
+                <img class="apple" src="./img/Apple Store.png" alt="apple">
+              </div>
+            </div>
+            <div class="download__imgs">
+              <div class="download__img">
+                <img class="download__BG" src="./img/downloadBG.png" alt="salat">
+                <img class="download__phone-frame" src="./img/app1.png" alt="phone">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
-  <script src="./script.js"></script>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="container">
+        <div class="footer__box">
+          <h4 class="footer__title">Get notified about new amazing products</h4>
+          <p class="footer__text --text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus senectus.</p>
+          <form class="footer__form" action="#">
+            <input class="footer__input" type="text" placeholder="E-mail">
+            <button class="footer__btn">
+              <img class="footer__btn-img" src="./img/arr_btn.png" alt="arrow">
+            </button>
+          </form>
+          <ul class="footer__options">
+            <li class="footer__option">
+              <a class="footer__link" href="#">company</a>
+            </li>
+            <li class="footer__option">
+              <a class="footer__link" href="#">product</a>
+            </li>
+            <li class="footer__option">
+              <a class="footer__link" href="#">lern more</a>
+            </li>
+            <li class="footer__option">
+              <a class="footer__link" href="#">get in touch</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__social">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./img/faacebook.png" alt="fb">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./img/Linkedin.png" alt="li">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./img/Behance.png" alt="be">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./img/tweeter.png" alt="tweeter">
+            </a>
+          </div>
+          <div class="footer__copy">
+            <img class="footer__copy-img" src="./img/Copy right Icon.png" alt="copy">
+            <p class="footer__copy-text">2022 expice studio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
