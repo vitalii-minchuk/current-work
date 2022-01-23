@@ -629,6 +629,7 @@ input:focus, textarea:focus, select:focus{
   overflow: hidden;
 }
 .explore__item-top {
+  overflow: hidden;
   height: 403px;
   position: relative;
   padding-bottom: 50%;
@@ -644,7 +645,7 @@ input:focus, textarea:focus, select:focus{
   object-fit: cover;
 }
 .explore__item-bottom {
-  padding: 30px 30px 20px;
+  padding: 50px 30px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -894,6 +895,30 @@ input:focus, textarea:focus, select:focus{
   background-color: #FE043C;
   cursor: pointer;
 }
+.change-booking__box-title::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  width: 80%;
+  min-height: 15px;
+  background-color: #35CD8C;
+}
+.change-booking__search-btn {
+  background-color: #35CD8C;
+}
+.change-price-color {
+  color: #35CD8C;
+}
+.change-booking__option-top::after {
+  background: url(./img/arrdown_green.png) no-repeat center;
+}
+.change-download__title-text::before {
+  background-color: #35CD8C;
+}
+.change-footer__btn {
+  background-color: #35CD8C;
+}
 
 
 
@@ -1094,6 +1119,9 @@ input:focus, textarea:focus, select:focus{
     text-transform: uppercase;
     padding: 12px 35px;
     cursor: pointer;
+  }
+  .change-booking__search-btn {
+    background-color: #35CD8C;
   }
   .booking__options {
     max-width: 650px;
@@ -1329,7 +1357,7 @@ input:focus, textarea:focus, select:focus{
     padding-bottom: 50px;
   }
   .explore__top {
-    padding: 150px 0 30px;
+    padding: 60px 0 30px;
   }
   .explore__top-title-text {
     font-size: 30px;
@@ -1674,16 +1702,23 @@ input:focus, textarea:focus, select:focus{
   .booking__options {
     max-width: 300px;
   }
+  .services__box {
+    padding-bottom: 20px;
+  }
   .explore__box {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     row-gap: 10px;
   }
   .explore__item-top {
+    padding-top: 10px;
     height: 250px;
     margin: 0;
   }
   .explore__item-bottom {
-    padding: 5px 10px;
+    padding: 20px 10px;
+  }
+  .explore__item-bottom >* {
+    font-size: 18px;
   }
   .explore__item-desc {
     max-width: 300px;

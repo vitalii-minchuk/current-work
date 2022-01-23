@@ -32,6 +32,14 @@ const BGimg = document.querySelector('.header__wrapper');
 const tag = document.querySelector('.header__tag');
 const inputBtnBG = document.querySelector('.header__search-btn');
 const tagBtnColor = document.querySelector('.header__tag-btn');
+const bookingBefore = document.querySelector('.booking__box-title');
+const bookingBtn = document.querySelector('.booking__search-btn');
+const price = document.querySelectorAll('.explore__item-price');
+const bookingTr = document.querySelectorAll('.booking__option-top');
+const downloadBefore = document.querySelector('.download__title-text');
+const footerBtn = document.querySelector('.footer__btn');
+const iconTable = document.querySelector('.services__table-img');
+const iconFood = document.querySelector('.services__food-free-img');
 
 colorBtn.addEventListener('click', () => {
   logo.classList.toggle('change-color');
@@ -40,5 +48,15 @@ colorBtn.addEventListener('click', () => {
   tag.classList.toggle('change-tag-color');
   inputBtnBG.classList.toggle('change-input-color');
   tagBtnColor.classList.toggle('change-tag-btn-color');
+  bookingBefore.classList.toggle('change-booking__box-title');
+  bookingBtn.classList.toggle('change-booking__search-btn');
+  price.forEach(item => {
+    item.classList.toggle('change-price-color');
+  });
+  bookingTr.forEach(item => {
+    item.classList.toggle('change-booking__option-top');
+  });
+  downloadBefore.classList.toggle('change-download__title-text');
+  footerBtn.classList.toggle('change-footer__btn');
 })
 
